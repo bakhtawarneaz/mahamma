@@ -7,7 +7,7 @@ import '../screen/splash.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: 'getStarted',
+    initialRoute: 'splash',
     routes: {
       'splash':(context) => Splash(),
       'getStarted':(context) => GettingStartedScreen(),
