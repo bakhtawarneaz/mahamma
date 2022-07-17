@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:mahamma/screen/login.dart';
+import 'package:mahamma/screen/signup.dart';
 
 import '../model/slide.dart';
 import '../widgets/slide_item.dart';
@@ -107,7 +109,8 @@ class _GettingStartedScreenState extends State<GettingStartedScreen> {
                     color: Color(0xff32A15A),
                     textColor: Colors.white,
                     onPressed: () {
-                      //Navigator.of(context).pushNamed(SignupScreen.routeName);
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const Signup()));
                     },
                   ),
                   Row(
@@ -119,7 +122,8 @@ class _GettingStartedScreenState extends State<GettingStartedScreen> {
                           style: TextStyle(fontSize: 18),
                         ),
                         onPressed: () {
-                          //Navigator.of(context).pushNamed(LoginScreen.routeName);
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => const Login()));
                         },
                       ),
                     ],
