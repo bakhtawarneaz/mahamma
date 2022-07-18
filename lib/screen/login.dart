@@ -88,23 +88,30 @@ class _LoginState extends State<Login> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  FlatButton(
-                    child: Text(
-                      'Login',
-                      style: TextStyle(
-                        fontSize: 18,
-                      ),
+                  // FlatButton(
+                  //   child: Text(
+                  //     'Login',
+                  //     style: TextStyle(
+                  //       fontSize: 18,
+                  //     ),
+                  //   ),
+                  //   shape: RoundedRectangleBorder(
+                  //     borderRadius: BorderRadius.circular(5),
+                  //   ),
+                  //   padding: const EdgeInsets.all(15),
+                  //   color: Color(0xff32A15A),
+                  //   textColor: Colors.white,
+                  //   onPressed: () {
+                  //     // Navigator.of(context).push(MaterialPageRoute(
+                  //     //     builder: (context) => const verifyAccount()));
+                  //   },
+                  // ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      textStyle: const TextStyle(fontSize: 18),
                     ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    padding: const EdgeInsets.all(15),
-                    color: Color(0xff32A15A),
-                    textColor: Colors.white,
-                    onPressed: () {
-                      // Navigator.of(context).push(MaterialPageRoute(
-                      //     builder: (context) => const verifyAccount()));
-                    },
+                    onPressed: () {},
+                    child: const Text('Login'),
                   ),
                   SizedBox(
                     height: 20,

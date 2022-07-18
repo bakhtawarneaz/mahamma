@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:mahamma/screen/all_workspaces.dart';
 import 'package:mahamma/screen/login.dart';
 import 'package:mahamma/screen/signup.dart';
 
@@ -95,36 +96,53 @@ class _GettingStartedScreenState extends State<GettingStartedScreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  FlatButton(
-                    child: Text(
-                      'Sign up',
-                      style: TextStyle(
-                        fontSize: 18,
-                      ),
+                  // FlatButton(
+                  //   child: Text(
+                  //     'Sign up',
+                  //     style: TextStyle(
+                  //       fontSize: 18,
+                  //     ),
+                  //   ),
+                  //   shape: RoundedRectangleBorder(
+                  //     borderRadius: BorderRadius.circular(5),
+                  //   ),
+                  //   padding: const EdgeInsets.all(15),
+                  //   color: Color(0xff32A15A),
+                  //   textColor: Colors.white,
+                  //   onPressed: () {
+                  //     Navigator.of(context).push(MaterialPageRoute(
+                  //         builder: (context) => const Signup()));
+                  //   },
+                  // ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      textStyle: const TextStyle(fontSize: 18),
                     ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    padding: const EdgeInsets.all(15),
-                    color: Color(0xff32A15A),
-                    textColor: Colors.white,
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const Signup()));
+                          builder: (context) => AllWorkspaces()));
                     },
+                    child: const Text('Sign up'),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      FlatButton(
-                        child: Text(
-                          'Login',
-                          style: TextStyle(fontSize: 18),
+                      // FlatButton(
+                      //   child: Text(
+                      //     'Login',
+                      //     style: TextStyle(fontSize: 18),
+                      //   ),
+                      //   onPressed: () {
+                      //     Navigator.of(context).push(MaterialPageRoute(
+                      //         builder: (context) => const Login()));
+                      //   },
+                      // ),
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          textStyle: const TextStyle(fontSize: 18),
                         ),
-                        onPressed: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => const Login()));
-                        },
+                        onPressed: () {},
+                        child: const Text('Login'),
                       ),
                     ],
                   ),

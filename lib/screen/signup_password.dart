@@ -88,23 +88,30 @@ class _SignupPasswordState extends State<SignupPassword> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  FlatButton(
-                    child: Text(
-                      'Continue',
-                      style: TextStyle(
-                        fontSize: 18,
-                      ),
+                  // FlatButton(
+                  //   child: Text(
+                  //     'Continue',
+                  //     style: TextStyle(
+                  //       fontSize: 18,
+                  //     ),
+                  //   ),
+                  //   shape: RoundedRectangleBorder(
+                  //     borderRadius: BorderRadius.circular(5),
+                  //   ),
+                  //   padding: const EdgeInsets.all(15),
+                  //   color: Color(0xff32A15A),
+                  //   textColor: Colors.white,
+                  //   onPressed: () {
+                  //     Navigator.of(context).push(MaterialPageRoute(
+                  //         builder: (context) => GettingStartedScreen()));
+                  //   },
+                  // ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      textStyle: const TextStyle(fontSize: 18),
                     ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    padding: const EdgeInsets.all(15),
-                    color: Color(0xff32A15A),
-                    textColor: Colors.white,
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => GettingStartedScreen()));
-                    },
+                    onPressed: () {},
+                    child: const Text('Continue'),
                   ),
                 ],
               )
