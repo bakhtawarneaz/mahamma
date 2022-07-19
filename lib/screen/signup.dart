@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mahamma/screen/login.dart';
+import 'package:mahamma/screen/sign_up_verify_account.dart';
 import 'package:mahamma/screen/verify_account.dart';
 
 
@@ -100,11 +101,25 @@ class _SignupState extends State<Signup> {
                   //   },
                   // ),
                   TextButton(
-                    style: TextButton.styleFrom(
-                      textStyle: const TextStyle(fontSize: 18),
+                    // style: TextButton.styleFrom(
+                    //   textStyle: const TextStyle(fontSize: 18),
+                    // ),
+                    child: Text(
+                      'Sign up',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
                     ),
-                    onPressed: () {},
-                    child: const Text('Sign up'),
+                    style: TextButton.styleFrom(
+                      primary: Colors.white,
+                      //primary: Color(0xff32A15A),
+                      backgroundColor: Colors.green,
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => SignUpVerifyAccount()));
+                    },
+                    //child: const Text('Sign up'),
                   ),
                   SizedBox(
                     height: 20,

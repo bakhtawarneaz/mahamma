@@ -1,8 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:mahamma/screen/all_workspaces.dart';
-import 'package:mahamma/screen/login.dart';
-import 'package:mahamma/screen/signup.dart';
+import '../screen/login.dart';
+import '../screen/signup.dart';
 
 import '../model/slide.dart';
 import '../widgets/slide_item.dart';
@@ -96,53 +95,39 @@ class _GettingStartedScreenState extends State<GettingStartedScreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  // FlatButton(
-                  //   child: Text(
-                  //     'Sign up',
-                  //     style: TextStyle(
-                  //       fontSize: 18,
-                  //     ),
-                  //   ),
-                  //   shape: RoundedRectangleBorder(
-                  //     borderRadius: BorderRadius.circular(5),
-                  //   ),
-                  //   padding: const EdgeInsets.all(15),
-                  //   color: Color(0xff32A15A),
-                  //   textColor: Colors.white,
-                  //   onPressed: () {
-                  //     Navigator.of(context).push(MaterialPageRoute(
-                  //         builder: (context) => const Signup()));
-                  //   },
-                  // ),
                   TextButton(
+                    child: Text(
+                      'Sign up',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
                     style: TextButton.styleFrom(
-                      textStyle: const TextStyle(fontSize: 18),
+                      primary: Colors.white,
+                      //primary: Color(0xff32A15A),
+                      backgroundColor: Colors.green,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => AllWorkspaces()));
+                          builder: (context) => const Signup()));
                     },
-                    child: const Text('Sign up'),
                   ),
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      // FlatButton(
-                      //   child: Text(
-                      //     'Login',
-                      //     style: TextStyle(fontSize: 18),
-                      //   ),
-                      //   onPressed: () {
-                      //     Navigator.of(context).push(MaterialPageRoute(
-                      //         builder: (context) => const Login()));
-                      //   },
-                      // ),
                       TextButton(
-                        style: TextButton.styleFrom(
-                          textStyle: const TextStyle(fontSize: 18),
+                        child: Text(
+                          'Login',
+                          style: TextStyle(fontSize: 18),
                         ),
-                        onPressed: () {},
-                        child: const Text('Login'),
+                        style: TextButton.styleFrom(
+                          primary: Colors.black87,
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => const Login()));
+                        },
                       ),
                     ],
                   ),

@@ -107,11 +107,22 @@ class _LoginState extends State<Login> {
                   //   },
                   // ),
                   TextButton(
+                    // style: TextButton.styleFrom(
+                    //   textStyle: const TextStyle(fontSize: 18),
+                    // ),
+                    child: Text(
+                      'Login',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
                     style: TextButton.styleFrom(
-                      textStyle: const TextStyle(fontSize: 18),
+                      primary: Colors.white,
+                      //primary: Color(0xff32A15A),
+                      backgroundColor: Colors.green,
                     ),
                     onPressed: () {},
-                    child: const Text('Login'),
+                    //child: const Text('Login'),
                   ),
                   SizedBox(
                     height: 20,

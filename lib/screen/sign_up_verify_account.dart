@@ -12,224 +12,118 @@ class SignUpVerifyAccount extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
-      body: Stack(
+      body: Container(
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+          child: Column(
         children: <Widget>[
-          Pinned.fromPins(
-            Pin(start: 0.0, end: 0.0),
-            Pin(size: 34.0, end: 0.0),
-            child:
-                // Adobe XD layer: 'safe area' (group)
-                Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'safe area' (shape)
-                Container(
-                  color: const Color(0xffffffff),
-                ),
-                Align(
-                  alignment: Alignment(0.0, 0.448),
-                  child: Container(
-                    width: 134.0,
-                    height: 5.0,
-                    decoration: BoxDecoration(
-                      color: const Color(0xff212121),
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 0.0, end: 0.0),
-            Pin(size: 44.0, start: 0.0),
-            child: Stack(
-              children: <Widget>[
-                Container(
-                  color: const Color(0xffffffff),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 16.0, end: 17.0),
-                  Pin(size: 18.0, middle: 0.5),
-                  child:
-                      // Adobe XD layer: 'Status Bar' (group)
-                      Stack(
-                    children: <Widget>[
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: SizedBox(
-                          width: 24.0,
-                          height: 11.0,
-                          child:
-                              // Adobe XD layer: 'Battery' (group)
-                              Stack(
-                            children: <Widget>[
-                              // Adobe XD layer: 'Border' (shape)
-                              Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(2.67),
-                                  border: Border.all(
-                                      width: 1.0,
-                                      color: const Color(0x59000000)),
-                                ),
-                                margin: EdgeInsets.fromLTRB(0.0, 0.0, 2.3, 0.0),
-                              ),
-                              Align(
-                                alignment: Alignment.centerRight,
-                                child: SizedBox(
-                                  width: 1.0,
-                                  height: 4.0,
-                                  child:
-                                      // Adobe XD layer: 'Cap' (shape)
-                                      SvgPicture.string(
-                                    _svg_ffj51b,
-                                    allowDrawingOutsideViewBox: true,
-                                  ),
-                                ),
-                              ),
-                              Pinned.fromPins(
-                                Pin(size: 18.0, start: 2.0),
-                                Pin(start: 2.0, end: 2.0),
-                                child:
-                                    // Adobe XD layer: 'Capacity' (shape)
-                                    Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xff000000),
-                                    borderRadius: BorderRadius.circular(1.33),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 15.3, end: 29.3),
-                        Pin(start: 3.3, end: 3.7),
-                        child:
-                            // Adobe XD layer: 'Wifi' (shape)
-                            SvgPicture.string(
-                          _svg_p3t6y,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 17.0, end: 49.7),
-                        Pin(start: 3.7, end: 3.7),
-                        child:
-                            // Adobe XD layer: 'Cellular Connection' (shape)
-                            SvgPicture.string(
-                          _svg_y54ae,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 34.0, start: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child:
-                            // Adobe XD layer: 'Time Style' (group)
-                            Stack(
-                          children: <Widget>[
-                            SizedBox.expand(
-                                child:
-                                    // Adobe XD layer: 'Time' (text)
-                                    SingleChildScrollView(
-                              primary: false,
-                              child: Text(
-                                '9:41',
-                                style: TextStyle(
-                                  fontFamily: 'Airbnb Cereal App',
-                                  fontSize: 15,
-                                  color: const Color(0xff000000),
-                                  letterSpacing: -0.3,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                            )),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Align(
-            alignment: Alignment(0.0, -0.375),
-            child: SizedBox(
-              width: 140.0,
-              height: 140.0,
-              child: Stack(
-                children: <Widget>[
-                  Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xffd6ecde),
-                      borderRadius:
-                          BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                    ),
-                  ),
-                  Transform.translate(
-                    offset: Offset(38.1, 46.1),
+          Expanded(child: Stack(
+                  alignment: AlignmentDirectional.bottomStart,
+                  children: <Widget>[
+
+                  Align(
+                    alignment: Alignment(0.0, -0.375),
                     child: SizedBox(
-                      width: 64.0,
-                      height: 48.0,
-                      child: SvgPicture.string(
-                        _svg_f5dyxf,
-                        allowDrawingOutsideViewBox: true,
+                      width: 140.0,
+                      height: 140.0,
+                      child: Stack(
+                        children: <Widget>[
+                          Container(
+                            decoration: BoxDecoration(
+                              color: const Color(0xffd6ecde),
+                              borderRadius:
+                                  BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                            ),
+                          ),
+                          Transform.translate(
+                            offset: Offset(38.1, 46.1),
+                            child: SizedBox(
+                              width: 64.0,
+                              height: 48.0,
+                              child: SvgPicture.string(
+                                _svg_f5dyxf,
+                                allowDrawingOutsideViewBox: true,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                ],
-              ),
-            ),
-          ),
-          Align(
-            alignment: Alignment(0.0, 0.108),
-            child: SizedBox(
-              width: 208.0,
-              height: 50.0,
-              child: Text(
-                'Now check your email for \nconfirmation link.',
-                style: TextStyle(
-                  fontFamily: 'Airbnb Cereal App',
-                  fontSize: 18,
-                  color: const Color(0xb2808281),
-                  fontWeight: FontWeight.w300,
-                  height: 1.4444444444444444,
+                  Align(
+                    alignment: Alignment(0.0, 0.108),
+                    child: SizedBox(
+                      width: 208.0,
+                      height: 50.0,
+                      child: Text(
+                        'Now check your email for \nconfirmation link.',
+                        style: TextStyle(
+                          fontFamily: 'Airbnb Cereal App',
+                          fontSize: 18,
+                          color: const Color(0xb2808281),
+                          fontWeight: FontWeight.w300,
+                          height: 1.4444444444444444,
+                        ),
+                        textHeightBehavior:
+                            TextHeightBehavior(applyHeightToFirstAscent: false),
+                        textAlign: TextAlign.center,
+                        softWrap: false,
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(0.0, -0.049),
+                    child: SizedBox(
+                      //width: 204.0,
+                      //height: 43.0,
+                      child: Text(
+                        'Verify Account',
+                        style: TextStyle(
+                          fontFamily: 'Airbnb Cereal App',
+                          fontSize: 32,
+                          color: const Color(0xff000000),
+                          fontWeight: FontWeight.w500,
+                          height: 1.28125,
+                        ),
+                        textHeightBehavior:
+                            TextHeightBehavior(applyHeightToFirstAscent: false),
+                        textAlign: TextAlign.center,
+                        softWrap: false,
+                      ),
+                    ),
+                  ),
+            ]
+          )),
+          //Container(),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              TextButton(
+                child: Text(
+                  'Open Email',
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
                 ),
-                textHeightBehavior:
-                    TextHeightBehavior(applyHeightToFirstAscent: false),
-                textAlign: TextAlign.center,
-                softWrap: false,
-              ),
-            ),
-          ),
-          Align(
-            alignment: Alignment(0.0, -0.049),
-            child: SizedBox(
-              width: 204.0,
-              height: 43.0,
-              child: Text(
-                'Verify Account',
-                style: TextStyle(
-                  fontFamily: 'Airbnb Cereal App',
-                  fontSize: 32,
-                  color: const Color(0xff000000),
-                  fontWeight: FontWeight.w500,
-                  height: 1.28125,
+                style: TextButton.styleFrom(
+                  primary: Colors.white,
+                  //primary: Color(0xff32A15A),
+                  backgroundColor: Colors.green,
                 ),
-                textHeightBehavior:
-                    TextHeightBehavior(applyHeightToFirstAscent: false),
-                textAlign: TextAlign.center,
-                softWrap: false,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => SignUpPassword()));
+                },
+                //child: const Text('Sign up'),
               ),
-            ),
+
+
+            ],
           ),
-          Container(),
+
         ],
+          ),
+      ),
       ),
     );
   }
