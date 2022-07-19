@@ -82,28 +82,7 @@ class _SignupState extends State<Signup> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  // FlatButton(
-                  //   child: Text(
-                  //     'Sign up',
-                  //     style: TextStyle(
-                  //       fontSize: 18,
-                  //     ),
-                  //   ),
-                  //   shape: RoundedRectangleBorder(
-                  //     borderRadius: BorderRadius.circular(5),
-                  //   ),
-                  //   padding: const EdgeInsets.all(15),
-                  //   color: Color(0xff32A15A),
-                  //   textColor: Colors.white,
-                  //   onPressed: () {
-                  //     Navigator.of(context).push(MaterialPageRoute(
-                  //         builder: (context) => const verifyAccount()));
-                  //   },
-                  // ),
                   TextButton(
-                    // style: TextButton.styleFrom(
-                    //   textStyle: const TextStyle(fontSize: 18),
-                    // ),
                     child: Text(
                       'Sign up',
                       style: TextStyle(

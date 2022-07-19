@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import 'package:mahamma/screen/sign_up_create_user_profile3.dart';
 import './sign_up_create_first_workspace.dart';
 import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -12,8 +13,13 @@ class SignUpCreateUserProfile2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
-      body: Stack(
+      body: Container(
+        child: Padding(
+        padding: const EdgeInsets.all(20),
+          child: Column(
         children: <Widget>[
+          Expanded(child: Stack(
+              children: <Widget> [
           Pinned.fromPins(
             Pin(start: 0.0, end: 0.0),
             Pin(size: 34.0, end: 0.0),
@@ -486,7 +492,43 @@ class SignUpCreateUserProfile2 extends StatelessWidget {
               ],
             ),
           ),
+              ],
+          )),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              SizedBox(
+                height: 150,
+              ),
+              TextButton(
+                child: Text(
+                  'Continue',
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
+                ),
+                style: TextButton.styleFrom(
+                  primary: Colors.white,
+                  //primary: Color(0xff32A15A),
+                  backgroundColor: Colors.green,
+                ),
+                // shape: RoundedRectangleBorder(
+                //   borderRadius: BorderRadius.circular(5),
+                // ),
+                // padding: const EdgeInsets.all(15),
+                // color: Color(0xff32A15A),
+                // textColor: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => SignUpCreateUserProfile3()));
+                },
+              ),
+
+            ],
+          ),
         ],
+          ),
+        ),
       ),
     );
   }
