@@ -11,172 +11,94 @@ class SignUpCreateFirstWorkspace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffffffff),
-      body: Stack(
-        children: <Widget>[
-          Pinned.fromPins(
-            Pin(start: 0.0, end: 0.0),
-            Pin(size: 34.0, end: 0.0),
-            child:
-                // Adobe XD layer: 'safe area' (group)
-                Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'safe area' (shape)
-                Container(
-                  color: const Color(0xffffffff),
-                ),
-                Align(
-                  alignment: Alignment(0.0, 0.448),
-                  child: Container(
-                    width: 134.0,
-                    height: 5.0,
-                    decoration: BoxDecoration(
-                      color: const Color(0xff212121),
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 0.0, end: 0.0),
-            Pin(size: 44.0, start: 0.0),
-            child: Stack(
-              children: <Widget>[
-                Container(
-                  color: const Color(0xffffffff),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 16.0, end: 17.0),
-                  Pin(size: 18.0, middle: 0.5),
-                  child:
-                      // Adobe XD layer: 'Status Bar' (group)
-                      Stack(
+      body: Container(
+        color: Colors.white,
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            children: <Widget>[
+              Expanded(child: Stack(
+                children: <Widget> [
+
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: SizedBox(
-                          width: 24.0,
-                          height: 11.0,
-                          child:
-                              // Adobe XD layer: 'Battery' (group)
-                              Stack(
-                            children: <Widget>[
-                              // Adobe XD layer: 'Border' (shape)
-                              Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(2.67),
-                                  border: Border.all(
-                                      width: 1.0,
-                                      color: const Color(0x59000000)),
-                                ),
-                                margin: EdgeInsets.fromLTRB(0.0, 0.0, 2.3, 0.0),
-                              ),
-                              Align(
-                                alignment: Alignment.centerRight,
-                                child: SizedBox(
-                                  width: 1.0,
-                                  height: 4.0,
-                                  child:
-                                      // Adobe XD layer: 'Cap' (shape)
-                                      SvgPicture.string(
-                                    _svg_ffj51b,
-                                    allowDrawingOutsideViewBox: true,
-                                  ),
-                                ),
-                              ),
-                              Pinned.fromPins(
-                                Pin(size: 18.0, start: 2.0),
-                                Pin(start: 2.0, end: 2.0),
-                                child:
-                                    // Adobe XD layer: 'Capacity' (shape)
-                                    Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xff000000),
-                                    borderRadius: BorderRadius.circular(1.33),
-                                  ),
-                                ),
-                              ),
-                            ],
+
+                      Container(
+                          alignment: Alignment.topLeft,
+                          padding: const EdgeInsets.all(5),
+                          child: const Text(
+                            'Welcome again,',
+                            style: TextStyle(fontSize: 24,color: Color(0xff343735),),
+                          )),
+
+                      Container(
+                          alignment: Alignment.topLeft,
+                          padding: const EdgeInsets.all(5),
+                          child: const Text(
+                            'thats will take a few minutes',
+                            style: TextStyle(fontSize: 24,color: Color(0xff343735),),
+                          )),
+
+                      SizedBox(
+                        height: 125,
+                      ),
+                      Container(
+                          alignment: Alignment.topLeft,
+                          padding: const EdgeInsets.all(5),
+                          child: const Text(
+                            'Workspace Name',
+                            style: TextStyle(fontSize: 16,color: Color(0xff343735),),
+                          )),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(),
+                            hintText: 'Ex.First workspace',
                           ),
                         ),
                       ),
-                      Pinned.fromPins(
-                        Pin(size: 15.3, end: 29.3),
-                        Pin(start: 3.3, end: 3.7),
-                        child:
-                            // Adobe XD layer: 'Wifi' (shape)
-                            SvgPicture.string(
-                          _svg_p3t6y,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 17.0, end: 49.7),
-                        Pin(start: 3.7, end: 3.7),
-                        child:
-                            // Adobe XD layer: 'Cellular Connection' (shape)
-                            SvgPicture.string(
-                          _svg_y54ae,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 34.0, start: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child:
-                            // Adobe XD layer: 'Time Style' (group)
-                            Stack(
-                          children: <Widget>[
-                            SizedBox.expand(
-                                child:
-                                    // Adobe XD layer: 'Time' (text)
-                                    SingleChildScrollView(
-                              primary: false,
-                              child: Text(
-                                '9:41',
-                                style: TextStyle(
-                                  fontFamily: 'Airbnb Cereal App',
-                                  fontSize: 15,
-                                  color: const Color(0xff000000),
-                                  letterSpacing: -0.3,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                            )),
-                          ],
-                        ),
-                      ),
                     ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(),
-          Container(),
-          Pinned.fromPins(
-            Pin(size: 310.0, start: 16.0),
-            Pin(size: 68.0, start: 114.0),
-            child: Text(
-              'Welcome again,\nthat\'s will take a few minutes.',
-              style: TextStyle(
-                fontFamily: 'Airbnb Cereal App',
-                fontSize: 24,
-                color: const Color(0xff010503),
-                fontWeight: FontWeight.w500,
-                height: 1.5,
+                  )
+                ],
+              )),
+
+              SizedBox(
+                height: 20,
               ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              softWrap: false,
-            ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  TextButton(
+                    child: Text(
+                      'Continue',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    style: TextButton.styleFrom(
+                      primary: Colors.white,
+                      //primary: Color(0xff32A15A),
+                      backgroundColor: Colors.green,
+                    ),
+                    // shape: RoundedRectangleBorder(
+                    //   borderRadius: BorderRadius.circular(5),
+                    // ),
+                    // padding: const EdgeInsets.all(15),
+                    // color: Color(0xff32A15A),
+                    // textColor: Colors.white,
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => SignUpCreateFirstWorkspace2()));
+                    },
+                  ),
+                ],
+              )
+            ],
           ),
-        ],
+        ),
       ),
     );
   }

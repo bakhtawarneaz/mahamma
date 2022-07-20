@@ -20,31 +20,31 @@ class SignUpCreateUserProfile2 extends StatelessWidget {
         children: <Widget>[
           Expanded(child: Stack(
               children: <Widget> [
-          Pinned.fromPins(
-            Pin(start: 0.0, end: 0.0),
-            Pin(size: 34.0, end: 0.0),
-            child:
-                // Adobe XD layer: 'safe area' (group)
-                Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'safe area' (shape)
-                Container(
-                  color: const Color(0xffffffff),
-                ),
-                Align(
-                  alignment: Alignment(0.0, 0.448),
-                  child: Container(
-                    width: 134.0,
-                    height: 5.0,
-                    decoration: BoxDecoration(
-                      color: const Color(0xff212121),
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          // Pinned.fromPins(
+          //   Pin(start: 0.0, end: 0.0),
+          //   Pin(size: 34.0, end: 0.0),
+          //   child:
+          //       // Adobe XD layer: 'safe area' (group)
+          //       Stack(
+          //     children: <Widget>[
+          //       // Adobe XD layer: 'safe area' (shape)
+          //       Container(
+          //         color: const Color(0xffffffff),
+          //       ),
+          //       Align(
+          //         alignment: Alignment(0.0, 0.448),
+          //         child: Container(
+          //           width: 134.0,
+          //           height: 5.0,
+          //           decoration: BoxDecoration(
+          //             color: const Color(0xff212121),
+          //             borderRadius: BorderRadius.circular(4.0),
+          //           ),
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
           Pinned.fromPins(
             Pin(start: 0.0, end: 0.0),
             Pin(size: 44.0, start: 0.0),
@@ -520,7 +520,7 @@ class SignUpCreateUserProfile2 extends StatelessWidget {
                 // textColor: Colors.white,
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => SignUpCreateUserProfile3()));
+                      builder: (context) => SignUpCreateFirstWorkspace()));
                 },
               ),
 

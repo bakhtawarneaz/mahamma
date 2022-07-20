@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mahamma/screen/password_recovery.dart';
 import 'package:mahamma/screen/signup.dart';
 
 class Login extends StatefulWidget {
@@ -77,6 +78,42 @@ class _LoginState extends State<Login> {
                           ),
                         ),
                       ),
+                      // Container(
+                      //     alignment: Alignment.topRight,
+                      //     padding: const EdgeInsets.all(5),
+                      //     child: const Text(
+                      //       'Forget Password',
+                      //       style: TextStyle(fontSize: 16,color: Color(0xff343735),),
+                      //     )),
+                      // TextButton(
+                      //   child: const Text(
+                      //     'Forget Password',
+                      //     style: TextStyle(fontSize: 16,color: Color(0xff343735),),
+                      //   ),
+                      //   onPressed: () {
+                      //     // Navigator.of(context).push(MaterialPageRoute(
+                      //     //     builder: (context) => const Signup()));
+                      //   },
+                      // ),
+                      ButtonTheme(
+                        child: TextButton(
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: Text(
+                              "Forget Password",
+                              style: TextStyle(
+                                color: Color(0xff343735),
+                                fontSize: 16,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => PasswordRecovery()));
+                          },
+                        ),
+                      )
                     ],
                   )
                 ],

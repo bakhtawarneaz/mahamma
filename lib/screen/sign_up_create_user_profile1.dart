@@ -163,23 +163,23 @@ class SignUpCreateUserProfile1 extends StatelessWidget {
             //   ),
             // ),
             Container(),
-            Pinned.fromPins(
-              Pin(size: 98.0, start: 16.0),
-              Pin(size: 21.0, start: 302.0),
-              child: Text(
-                'Working Days',
-                style: TextStyle(
-                  fontFamily: 'Airbnb Cereal App',
-                  fontSize: 16,
-                  color: const Color(0xff343735),
-                  fontWeight: FontWeight.w300,
-                  height: 1.3125,
-                ),
-                textHeightBehavior:
-                    TextHeightBehavior(applyHeightToFirstAscent: false),
-                softWrap: false,
-              ),
-            ),
+            // Pinned.fromPins(
+            //   Pin(size: 98.0, start: 16.0),
+            //   Pin(size: 21.0, start: 302.0),
+            //   child: Text(
+            //     'Working Days',
+            //     style: TextStyle(
+            //       fontFamily: 'Airbnb Cereal App',
+            //       fontSize: 16,
+            //       color: const Color(0xff343735),
+            //       fontWeight: FontWeight.w300,
+            //       height: 200,
+            //     ),
+            //     textHeightBehavior:
+            //         TextHeightBehavior(applyHeightToFirstAscent: false),
+            //     softWrap: false,
+            //   ),
+            // ),
             Pinned.fromPins(
               Pin(size: 77.0, start: 16.0),
               Pin(size: 48.0, middle: 0.4171),

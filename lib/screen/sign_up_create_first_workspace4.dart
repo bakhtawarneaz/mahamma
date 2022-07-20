@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
+import 'package:mahamma/screen/all_workspaces.dart';
 import './sign_up_create_first_workspace2.dart';
 import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -1757,6 +1758,38 @@ class SignUpCreateFirstWorkspace4 extends StatelessWidget {
               ],
             ),
           ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              SizedBox(
+                height: 850,
+              ),
+              TextButton(
+                child: Text(
+                  'Save',
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
+                ),
+                style: TextButton.styleFrom(
+                  primary: Colors.white,
+                  //primary: Color(0xff32A15A),
+                  backgroundColor: Colors.green,
+                ),
+                // shape: RoundedRectangleBorder(
+                //   borderRadius: BorderRadius.circular(5),
+                // ),
+                // padding: const EdgeInsets.all(15),
+                // color: Color(0xff32A15A),
+                // textColor: Colors.white,
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => AllWorkspaces()));
+                },
+              ),
+
+            ],
+          )
         ],
       ),
     );

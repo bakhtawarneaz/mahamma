@@ -31,7 +31,8 @@ class SignUpCreateUserProfile extends StatelessWidget {
                           child: const Text(
                             'Welcome again,',
                             style: TextStyle(fontSize: 24,color: Color(0xff343735),),
-                          )),
+                          )
+                      ),
 
                       Container(
                           alignment: Alignment.topLeft,
@@ -80,7 +81,7 @@ class SignUpCreateUserProfile extends StatelessWidget {
                       padding: const EdgeInsets.all(5),
                       child: const Text(
                         'Full Name',
-                        style: TextStyle(fontSize: 16,color: Color(0xff32A15A),),
+                        style: TextStyle(fontSize: 16,color: Color(0xff343735),),
                       )),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
